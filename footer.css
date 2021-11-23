@@ -1,109 +1,109 @@
 .footer {
-    width: 100%;
-    padding: 65px 0;
-    background: #0b0d17;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  padding: 65px 0;
+  background: #0b0d17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__wrapper {
-    width: 100%;
-    max-width: 1110px;
-    display: flex;
-    flex-wrap: wrap-reverse;
+  width: 100%;
+  max-width: 1110px;
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 
 .company-info {
-    width: 100%;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 125px;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 125px;
 }
 
 .i-tapp_title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 37px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .copyright_p {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 
-    font-size: 14px;
-    line-height: 24px;
+  font-size: 14px;
+  line-height: 24px;
 
-    color: #d9dbe1;
+  color: #d9dbe1;
 }
 
 .all-rights-reserved {
-    font-size: 14px;
-    line-height: 24px;
+  font-size: 14px;
+  line-height: 24px;
 
-    color: #d9dbe1;
+  color: #d9dbe1;
 }
 
 .links_block {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer_title {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 28px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
 
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .company_links_ul {
-    height: 178px;
-    margin-right: 55px;
+  height: 178px;
+  margin-right: 55px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .jobs_links_ul {
-    height: 102px;
+  height: 102px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .footer_p {
-    line-height: 26px;
+  line-height: 26px;
 
-    color: #d9dbe1;
-    cursor: pointer;
+  color: #d9dbe1;
+  cursor: pointer;
 }
 
 .footer_p:hover {
-    color: #7a90d2;
+  color: #7a90d2;
 }
 
-@media (max-width: 1200px){
-    .footer__wrapper{
-        padding-left: 50px;
-        padding-right: 30px;
-    }
+@media (max-width: 1200px) {
+  .footer__wrapper {
+    padding-left: 50px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 768px) {
-    .footer__wrapper{
-        padding: 0 30px;
-    }
+  .footer__wrapper {
+    padding: 0 30px;
+  }
 }
