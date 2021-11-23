@@ -11,7 +11,6 @@
 .our-client-speak__wrapper {
     width: 100%;
     max-width: 1110px;
-    padding: 0 30px;
 }
 
 .our-client-speak__text {
@@ -39,10 +38,10 @@
 }
 
 .our-client-speak__carousel_block {
-    max-width: 1000px;
+    max-width: 1110px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .carousel_element {
@@ -51,7 +50,7 @@
 }
 
 .white_block {
-    max-width: 350px;
+    width: 350px;
     background: #ffffff;
     box-shadow: 0 30px 40px rgba(212, 217, 232, 0.1);
     border-radius: 8px;
@@ -152,118 +151,27 @@
 }
 
 
-/*@media (max-width: 1200px) {*/
-/*    .our-client-speak__wrapper {*/
-/*        width: 900px;*/
-/*    }*/
-
-/*    .our-client-speak__carousel_block {*/
-/*        flex-wrap: wrap;*/
-/*    }*/
-
-/*    .carousel_third {*/
-/*        margin-top: 50px;*/
-/*        margin-left: 280px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 992px) {*/
-/*    .our-client-speak__wrapper {*/
-/*        width: 700px;*/
-/*    }*/
-
-/*    .our-client-speak__carousel_block {*/
-/*        margin-left: -10px;*/
-/*    }*/
-
-/*    .carousel_third {*/
-/*        margin-top: 10px;*/
-/*        margin-left: 180px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 768px) {*/
-/*    .our-client-speak__wrapper {*/
-/*        width: 400px;*/
-/*    }*/
-
-/*    .carousel_third {*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    .carousel_element {*/
-/*        margin-top: 30px;*/
-/*    }*/
-
-/*    .our-client-speak__carousel_block {*/
-/*        justify-content: center;*/
-/*        flex-direction: column;*/
-/*        margin-left: 20px;*/
-/*    }*/
-/*}*/
-
-@media (max-width: 480px) {
-    .our-client-speak__wrapper {
-        width: 300px;
+@media (max-width: 1200px) {
+    .our-client-speak__wrapper{
+        padding: 0 30px;
     }
 
-    .our-client-speak__title_main {
-        font-size: 34px;
+    .our-client-speak__carousel_block{
+        justify-content: center;
     }
 
-    .our-client-speak__p {
-        font-size: 16px;
+    .white_block{
+        max-width: 350px;
     }
 
-    .our-client-speak__carousel_block {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .carousel_element {
-        margin: 15px auto;
-    }
-
-    .white_block {
-        width: 280px;
-    }
-
-    .block_text {
-        width: 210px;
+    .carousel_element{
+        margin: 20px;
     }
 }
 
-@media (max-width: 320px) {
-    .our-client-speak__wrapper {
-        width: 260px;
+@media (max-width: 480px) {
+    .white_block{
+        max-width: 300px;
     }
 
-    .our-client-speak__title_main {
-        font-size: 34px;
-    }
-
-    .our-client-speak__p {
-        font-size: 16px;
-    }
-
-    .our-client-speak__carousel_block {
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .carousel_element {
-        margin: 15px auto;
-    }
-
-    .white_block {
-        width: 255px;
-    }
-
-    .block_text {
-        width: 200px;
-    }
-
-    .photo-and-name {
-        margin-left: 20px;
-    }
 }

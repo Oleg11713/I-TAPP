@@ -8,12 +8,15 @@
 }
 
 .footer__wrapper {
-    width: 1110px;
+    width: 100%;
+    max-width: 1110px;
     display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 .company-info {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     margin-right: 125px;
@@ -49,6 +52,7 @@
 
 .links_block {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer_title {
@@ -68,6 +72,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .jobs_links_ul {
@@ -76,6 +81,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .footer_p {
@@ -89,86 +95,15 @@
     color: #7a90d2;
 }
 
-@media (max-width: 1200px) {
-    .footer__wrapper {
-        width: 900px;
-    }
-}
-
-@media (max-width: 992px) {
-    .footer__wrapper {
-        width: 700px;
-    }
-
-    .links_block {
-        width: 500px;
+@media (max-width: 1200px){
+    .footer__wrapper{
+        padding-left: 50px;
+        padding-right: 30px;
     }
 }
 
 @media (max-width: 768px) {
-    .footer__wrapper {
-        width: 400px;
-        flex-direction: column-reverse;
-    }
-
-    .links_block {
-        width: 400px;
-    }
-
-    .company-info {
-        margin-top: 80px;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer__wrapper {
-        width: 300px;
-        flex-direction: column-reverse;
-    }
-
-    .company-info {
-        width: 300px;
-        margin-right: 0;
-    }
-
-    .i-tapp_title {
-        margin-bottom: 34px;
-    }
-
-    .copyright_p {
-        font-size: 12px;
-    }
-
-    .all-rights-reserved {
-        font-size: 12px;
-    }
-
-    .links_block {
-        width: 300px;
-        flex-direction: column;
-    }
-
-    .company_links_ul {
-        height: 178px;
-        margin-right: 0;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 40px;
-    }
-}
-
-@media (max-width: 320px) {
-    .footer__wrapper {
-        width: 260px;
-    }
-
-    .company-info {
-        width: 260px;
-    }
-
-    .links_block {
-        width: 260px;
+    .footer__wrapper{
+        padding: 0 30px;
     }
 }
