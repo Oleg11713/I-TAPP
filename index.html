@@ -10,14 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="get-everything-you-need.css" />
-    <link rel="stylesheet" href="info-for.css" />
-    <link rel="stylesheet" href="our-client-speak.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/get-everything-you-need.css" />
+    <link rel="stylesheet" href="./src/css/info-for.css" />
+    <link rel="stylesheet" href="./src/css/our-client-speak.css" />
 
-    <link rel="stylesheet" href="some-count-that-matter.css" />
-    <link rel="stylesheet" href="cookies.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="./src/css/some-count-that-matter.css" />
+    <link rel="stylesheet" href="./src/css/cookies.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
 
     <title>main-page</title>
   </head>
@@ -28,7 +28,7 @@
           <div class="header__left">
             <img
               class="header__logo-img"
-              src="./Image/IT-logo.png"
+              src="./src/Image/IT-logo.png"
               alt="IT-logo"
             />
             <nav class="header__nav_pages">
@@ -43,8 +43,8 @@
               <a href="#!" class="nav_text">For Headhunters</a>
             </nav>
             <div class="header__auth-buttons">
-              <button class="button_login">Login</button>
-              <button class="button_sign-up">Sign up</button>
+              <button class="auth-buttons__login">Login</button>
+              <button class="auth-buttons__sign-up">Sign up</button>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
 
       <section class="get-everything-you-need">
         <div class="get-everything-you-need__wrapper">
-          <div class="get-everything-you-need__top">
+          <div class="get-everything-you-need__main">
             <div class="get-everything-you-need__text">
               <h1 class="get-everything-you-need__title">
                 Get everything you need from a job
@@ -63,18 +63,26 @@
             </div>
             <img
               class="get-everything-you-need__image"
-              src="./Image/get_everything_you_need.png"
+              src="./src/Image/get_everything_you_need.png"
               alt="get-everything-you-need"
             />
           </div>
 
           <div class="search-bar">
-            <input type="text" class="job-title" placeholder="Job title" />
-            <input type="text" class="where" placeholder="Where" />
-            <select class="distance">
-              <option class="distance_p">Distance</option>
+            <input
+              type="text"
+              class="search-bar__job-title-input"
+              placeholder="Job title"
+            />
+            <input
+              type="text"
+              class="search-bar__where-input"
+              placeholder="Where"
+            />
+            <select class="search-bar__distance-select">
+              <option class="search-bar__distance-option">Distance</option>
             </select>
-            <button class="search-button">Search</button>
+            <button class="search-bar__button">Search</button>
           </div>
         </div>
       </section>
@@ -85,60 +93,80 @@
               <h2 class="for-candidates__title_main">For Candidates</h2>
               <div class="for-candidates__text">
                 <div class="for-candidates__text_column">
-                  <div class="for-candidates__text_blocks">
-                    <h3 class="for-candidates__title">Build profile page</h3>
-                    <p class="for-candidates__p">
+                  <div class="for-candidates__column_text-blocks">
+                    <h3 class="for-candidates__text-blocks_title">
+                      Build profile page
+                    </h3>
+                    <p class="for-candidates__text-blocks_p">
                       Manage all applications in one area
                     </p>
                   </div>
-                  <div class="for-candidates__text_blocks">
-                    <h3 class="for-candidates__title">Nothing will be lost</h3>
-                    <p class="for-candidates__p">
+                  <div class="for-candidates__column_text-blocks">
+                    <h3 class="for-candidates__text-blocks_title">
+                      Nothing will be lost
+                    </h3>
+                    <p class="for-candidates__text-blocks_p">
                       Save jobs for later viewing, share to colleagues or social
                       media
                     </p>
                   </div>
-                  <div class="for-candidates__text_blocks">
-                    <h3 class="for-candidates__title">
+                  <div class="for-candidates__column_text-blocks">
+                    <h3 class="for-candidates__text-blocks_title">
                       Apply directly to employer
                     </h3>
-                    <p class="apply_directly_to_employer_p for-candidates__p">
+                    <p
+                      class="
+                        for-candidates__text-blocks_p
+                        for-candidates__text-blocks_p_apply-directly-to-employer
+                      "
+                    >
                       All jobs posted are employer only
                     </p>
                   </div>
-                  <div class="for-candidates__text_blocks">
-                    <h3 class="for-candidates__title">Advanced search</h3>
-                    <p class="for-candidates__p">
+                  <div class="for-candidates__column_text-blocks">
+                    <h3 class="for-candidates__text-blocks_title">
+                      Advanced search
+                    </h3>
+                    <p class="for-candidates__text-blocks_p">
                       Search by multi location/ type feature
                     </p>
                   </div>
                 </div>
                 <div class="for-candidates__text_column">
-                  <div class="for-candidates__text_blocks">
-                    <h3 class="for-candidates__title">User friendly</h3>
-                    <p class="for-candidates__p">
+                  <div class="for-candidates__column_text-blocks">
+                    <h3 class="for-candidates__text-blocks_title">
+                      User friendly
+                    </h3>
+                    <p class="for-candidates__text-blocks_p">
                       Easy CV upload, build or edit
                     </p>
                   </div>
-                  <div class="for-candidates__text_blocks">
-                    <h3 class="for-candidates__title">Recommendations</h3>
-                    <p class="for-candidates__p">
+                  <div class="for-candidates__column_text-blocks">
+                    <h3 class="for-candidates__text-blocks_title">
+                      Recommendations
+                    </h3>
+                    <p class="for-candidates__text-blocks_p">
                       View recommended jobs based on selected preferences
                     </p>
                   </div>
-                  <div class="for-candidates__text_blocks">
+                  <div class="for-candidates__column_text-blocks">
                     <h3
-                      class="feedback_on_all_applications for-candidates__title"
+                      class="
+                        for-candidates__text-blocks_title
+                        for-candidates__text-blocks_title_feedback-on-all-applications
+                      "
                     >
                       Feedback on all applications
                     </h3>
-                    <p class="for-candidates__p">
+                    <p class="for-candidates__text-blocks_p">
                       You will always receive a response to your application
                     </p>
                   </div>
-                  <div class="for-candidates__text_blocks">
-                    <h3 class="for-candidates__title">Visibility</h3>
-                    <p class="for-candidates__p">
+                  <div class="for-candidates__column_text-blocks">
+                    <h3 class="for-candidates__text-blocks_title">
+                      Visibility
+                    </h3>
+                    <p class="for-candidates__text-blocks_p">
                       Be visible to employers for invitations to apply for a
                       position
                     </p>
@@ -149,7 +177,7 @@
             <div class="for-candidates__right">
               <img
                 class="for-candidates__image"
-                src="./Image/for_candidates.png"
+                src="./src/Image/for_candidates.png"
                 alt="for-candidates"
               />
             </div>
@@ -158,7 +186,7 @@
             <div class="for-employers__left">
               <img
                 class="for-employers__image"
-                src="./Image/for_employers.png"
+                src="./src/Image/for_employers.png"
                 alt="for-employers"
               />
             </div>
@@ -166,29 +194,40 @@
               <h2 class="for-employers__title_main">For Employers</h2>
               <div class="for-employers__text">
                 <div class="for-employers__text_column">
-                  <div class="for-employers__text_blocks">
-                    <h3 class="for-employers__title">Everything you need</h3>
-                    <p class="for-employers__p">
+                  <div class="for-employers__column_text-blocks">
+                    <h3 class="for-employers__text-blocks_title">
+                      Everything you need
+                    </h3>
+                    <p class="for-employers__text-blocks_p">
                       Manage recruitment process all in one place
                     </p>
                   </div>
-                  <div class="for-employers__text_blocks">
-                    <h3 class="for-employers__title">Application flow</h3>
-                    <p class="for-employers__p">
+                  <div class="for-employers__column_text-blocks">
+                    <h3 class="for-employers__text-blocks_title">
+                      Application flow
+                    </h3>
+                    <p class="for-employers__text-blocks_p">
                       Direct applicants with full view CV and details
                     </p>
                   </div>
-                  <div class="for-employers__text_blocks">
-                    <h3 class="for-employers__title">Tailored packages</h3>
-                    <p class="for-employers__p">
+                  <div class="for-employers__column_text-blocks">
+                    <h3 class="for-employers__text-blocks_title">
+                      Tailored packages
+                    </h3>
+                    <p class="for-employers__text-blocks_p">
                       Customise your package to your needs
                     </p>
                   </div>
                   <div
-                    class="candidate_database_div for-employers__text_blocks"
+                    class="
+                      for-employers__column_text-blocks
+                      for-employers__column_text-blocks_candidate-database
+                    "
                   >
-                    <h3 class="for-employers__title">Candidate database</h3>
-                    <p class="for-employers__p">
+                    <h3 class="for-employers__text-blocks_title">
+                      Candidate database
+                    </h3>
+                    <p class="for-employers__text-blocks_p">
                       Collect your own candidate database and recommend other
                       roles in your organisation.
                     </p>
@@ -200,23 +239,25 @@
                     for-employers__text_column for-employers__text_column_second
                   "
                 >
-                  <div class="for-employers__text_blocks">
-                    <h3 class="for-employers__title">
+                  <div class="for-employers__column_text-blocks">
+                    <h3 class="for-employers__text-blocks_title">
                       Reduce annual recruitment costs
                     </h3>
-                    <p class="for-employers__p">
+                    <p class="for-employers__text-blocks_p">
                       Simplifed recruitment process reducing overheads
                     </p>
                   </div>
-                  <div class="for-employers__text_blocks">
-                    <h3 class="for-employers__title">Personalised</h3>
-                    <p class="for-employers__p">
+                  <div class="for-employers__column_text-blocks">
+                    <h3 class="for-employers__text-blocks_title">
+                      Personalised
+                    </h3>
+                    <p class="for-employers__text-blocks_p">
                       Build job and personalise process (stages, questions etc.)
                     </p>
                   </div>
-                  <div class="for-employers__text_blocks">
-                    <h3 class="for-employers__title">Analytics</h3>
-                    <p class="for-employers__p">
+                  <div class="for-employers__column_text-blocks">
+                    <h3 class="for-employers__text-blocks_title">Analytics</h3>
+                    <p class="for-employers__text-blocks_p">
                       Get detailed information on how your applications are
                       performing
                     </p>
@@ -230,22 +271,24 @@
               <h2 class="for-headhunters__title_main">For Headhunters</h2>
               <div class="for-headhunters__text">
                 <div class="for-headhunters__text_column">
-                  <div class="for-headhunters__text_blocks">
-                    <h3 class="for-headhunters__title">Build profile</h3>
-                    <p class="for-headhunters__p">
+                  <div class="for-headhunters__column_text-blocks">
+                    <h3 class="for-headhunters__text-blocks_title">
+                      Build profile
+                    </h3>
+                    <p class="for-headhunters__text-blocks_p">
                       Advertise skills/ expertise to employers and candidates
                     </p>
                   </div>
                   <div
                     class="
-                      develop_stronger_client_relationships_div
-                      for-headhunters__text_blocks
+                      for-headhunters__column_text-blocks
+                      for-headhunters__column_text-blocks_develop-stronger-client-relationships
                     "
                   >
-                    <h3 class="for-headhunters__title">
+                    <h3 class="for-headhunters__text-blocks_title">
                       Develop stronger client relationships
                     </h3>
-                    <p class="for-headhunters__p">
+                    <p class="for-headhunters__text-blocks_p">
                       No confusion who submitted candidates first
                     </p>
                   </div>
@@ -259,24 +302,24 @@
                     for-headhunters__text_column_second
                   "
                 >
-                  <div class="for-headhunters__text_blocks">
-                    <h3 class="for-headhunters__title">
+                  <div class="for-headhunters__column_text-blocks">
+                    <h3 class="for-headhunters__text-blocks_title">
                       Get invited to assist on a vacancy
                     </h3>
-                    <p class="for-headhunters__p">
+                    <p class="for-headhunters__text-blocks_p">
                       Submit your candidates directly to employers
                     </p>
                   </div>
                   <div
                     class="
-                      weekly_progress_summary_div
-                      for-headhunters__text_blocks
+                      for-headhunters__column_text_blocks
+                      for-headhunters__column_text-blocks_weekly-progress-summary
                     "
                   >
-                    <h3 class="for-headhunters__title">
+                    <h3 class="for-headhunters__text-blocks_title">
                       Weekly progress summary
                     </h3>
-                    <p class="for-headhunters__p">
+                    <p class="for-headhunters__text-blocks_p">
                       Get weekly updates on your candidates progress
                     </p>
                   </div>
@@ -286,7 +329,7 @@
             <div class="for-headhunters__right">
               <img
                 class="for-headhunters__image"
-                src="./Image/for_headhunters.png"
+                src="./src/Image/for_headhunters.png"
                 alt="for-headhunters"
               />
             </div>
@@ -301,63 +344,73 @@
               We have been working with clients around the world
             </p>
           </div>
-          <div class="our-client-speak__carousel_block">
-            <div class="carousel_element">
-              <div class="white_block">
-                <img class="stars" src="./Image/stars.png" alt="stars" />
-                <div class="block_text">
-                  <h3 class="our-client-speak__title">
-                    Efficient Collaborating
-                  </h3>
-                  <p class="our-client-speak__carousel_p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
-                  </p>
-                </div>
-                <div class="photo-and-name">
-                  <img class="photo" src="./Image/photo.png" alt="Photo" />
-                  <div class="personal-info">
-                    <p class="surname-name">Jane Cooper</p>
-                    <p class="company">CEO at ABC Corporation</p>
-                  </div>
+          <div class="our-client-speak__carousel-block">
+            <div class="carousel-element">
+              <img class="stars" src="./src/Image/stars.png" alt="stars" />
+              <div class="carousel-element_block-text">
+                <h3 class="our-client-speak__block-text_title">
+                  Efficient Collaborating
+                </h3>
+                <p class="our-client-speak__block-text_p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                </p>
+              </div>
+              <div class="carousel-element__personal-info">
+                <img
+                  class="personal-info_photo"
+                  src="./src/Image/photo.png"
+                  alt="Photo"
+                />
+                <div class="personal-info_text-info">
+                  <p class="text-info_name">Jane Cooper</p>
+                  <p class="text-info_company">CEO at ABC Corporation</p>
                 </div>
               </div>
             </div>
-            <div class="carousel_element">
-              <div class="white_block">
-                <img class="stars" src="Image/stars.png" alt="stars" />
-                <div class="block_text">
-                  <h3 class="our-client-speak__title">Intuitive Design</h3>
-                  <p class="our-client-speak__carousel_p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
-                  </p>
-                </div>
-                <div class="photo-and-name">
-                  <img class="photo" src="Image/photo.png" alt="Photo" />
-                  <div class="personal-info">
-                    <p class="surname-name">Jane Cooper</p>
-                    <p class="company">CEO at ABC Corporation</p>
-                  </div>
+            <div class="carousel-element">
+              <img class="stars" src="./src/Image/stars.png" alt="stars" />
+              <div class="carousel-element_block-text">
+                <h3 class="our-client-speak__block-text_title">
+                  Intuitive Design
+                </h3>
+                <p class="our-client-speak__block-text_p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                </p>
+              </div>
+              <div class="carousel-element__personal-info">
+                <img
+                  class="personal-info_photo"
+                  src="./src/Image/photo.png"
+                  alt="Photo"
+                />
+                <div class="personal-info_text-info">
+                  <p class="text-info_name">Jane Cooper</p>
+                  <p class="text-info_company">CEO at ABC Corporation</p>
                 </div>
               </div>
             </div>
-            <div class="carousel_third carousel_element">
-              <div class="white_block">
-                <img class="stars" src="Image/stars.png" alt="stars" />
-                <div class="block_text">
-                  <h3 class="our-client-speak__title">Mindblowing Service</h3>
-                  <p class="our-client-speak__carousel_p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
-                  </p>
-                </div>
-                <div class="photo-and-name">
-                  <img class="photo" src="Image/photo.png" alt="Photo" />
-                  <div class="personal-info">
-                    <p class="surname-name">Jane Cooper</p>
-                    <p class="company">CEO at ABC Corporation</p>
-                  </div>
+            <div class="carousel-element">
+              <img class="stars" src="./src/Image/stars.png" alt="stars" />
+              <div class="carousel-element_block-text">
+                <h3 class="our-client-speak__block-text_title">
+                  Mindblowing Service
+                </h3>
+                <p class="our-client-speak__block-text_p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                </p>
+              </div>
+              <div class="carousel-element__personal-info">
+                <img
+                  class="personal-info_photo"
+                  src="./src/Image/photo.png"
+                  alt="Photo"
+                />
+                <div class="personal-info_text-info">
+                  <p class="text-info_name">Jane Cooper</p>
+                  <p class="text-info_company">CEO at ABC Corporation</p>
                 </div>
               </div>
             </div>
@@ -383,7 +436,7 @@
             <div class="some-count-that-matter__element">
               <img
                 class="happy-clients_img"
-                src="Image/happy_clients.png"
+                src="./src/Image/happy_clients.png"
                 alt="happy-clients"
               />
               <div class="some_count_block_text">
@@ -394,7 +447,7 @@
             <div class="some-count-that-matter__element">
               <img
                 class="projects-completed_img"
-                src="Image/projects_completed.png"
+                src="./src/Image/projects_completed.png"
                 alt="projects-completed"
               />
               <div class="some_count_block_text">
@@ -407,7 +460,7 @@
             <div class="some-count-that-matter__element">
               <img
                 class="dedicated-members_img"
-                src="Image/dedicated_members.png"
+                src="./src/Image/dedicated_members.png"
                 alt="dedicated-members_img"
               />
               <div class="some_count_block_text">
@@ -418,7 +471,7 @@
             <div class="some-count-that-matter__element">
               <img
                 class="awards-won_img"
-                src="Image/awards_won.png"
+                src="./src/Image/awards_won.png"
                 alt="awards-won"
               />
               <div class="some_count_block_text">
@@ -431,14 +484,14 @@
             <h2 class="some-count-that-matter__news">News</h2>
             <div class="all-news_block">
               <p class="all-news_p">All news</p>
-              <img class="vector" src="Image/vector.svg" alt="vector" />
+              <img class="vector" src="./src/Image/vector.svg" alt="vector" />
             </div>
           </div>
           <div class="news-pictures__block">
             <div class="news-pictures__element">
               <img
                 class="news-picture_image"
-                src="Image/news_picture_first.png"
+                src="./src/Image/news_picture_first.png"
                 alt="Big_update"
               />
               <div class="news_block_text">
@@ -453,7 +506,7 @@
             <div class="news-pictures__element">
               <img
                 class="news-picture_image"
-                src="Image/news_picture_third.png"
+                src="./src/Image/news_picture_third.png"
                 alt="Collaborations_-_together_with_CNN"
               />
               <div class="news_block_text">
@@ -470,7 +523,7 @@
             <div class="news-pictures__element_third news-pictures__element">
               <img
                 class="news-picture_image"
-                src="Image/news_picture_second.png"
+                src="./src/Image/news_picture_second.png"
                 alt="New_platform_-_iOS_application"
               />
               <div class="news_block_text">
