@@ -156,6 +156,14 @@
   flex-direction: column;
 }
 
+.news-picture_image-wrapper {
+  max-width: 350px;
+}
+
+.news-picture_image {
+  width: 100%;
+}
+
 .news_block_text {
   max-width: 350px;
   margin-top: 20px;
@@ -202,11 +210,6 @@
 }
 
 @media (max-width: 480px) {
-  .news-picture_image {
-    width: 250px;
-    height: 130px;
-  }
-
   .news_block_text {
     max-width: 250px;
   }
