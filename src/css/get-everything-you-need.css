@@ -17,7 +17,6 @@
 
 .get-everything-you-need__image-div {
   max-width: 585px;
-  background-size: cover;
 }
 
 .get-everything-you-need__image {
@@ -138,10 +137,19 @@
 }
 
 @media (max-width: 768px) {
+  .get-everything-you-need__wrapper {
+    padding: 0 30px;
+  }
+
+  .get-everything-you-need__main {
+    padding: 0;
+  }
+
   .search-bar {
     flex-direction: column;
     max-width: 400px;
     background-color: #f5f7fa;
+    padding: 22px 0;
   }
 
   .search-bar__job-title-input {

@@ -4,6 +4,11 @@
   background: white;
 }
 
+.image-section {
+  display: flex;
+  align-items: center;
+}
+
 .for-candidates__section {
   display: flex;
   justify-content: space-between;
@@ -13,6 +18,7 @@
 .for-candidates__left {
   width: 100%;
   max-width: 524px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -64,15 +70,34 @@
   color: #999999;
 }
 
+.for-candidates__right {
+  max-width: 524px;
+}
+
+.for-candidates__image {
+  width: 100%;
+}
+
 .for-employers__section {
   margin-bottom: 37px;
   display: flex;
   justify-content: space-between;
 }
 
+.for-employers__left {
+  max-width: 524px;
+}
+
+.for-employers__image {
+  width: 100%;
+}
+
 .for-employers__right {
+  display: flex;
   width: 100%;
   max-width: 524px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .for-employers__title_main {
@@ -198,6 +223,14 @@
   color: #999999;
 }
 
+.for-headhunters__right {
+  max-width: 524px;
+}
+
+.for-headhunters__image {
+  width: 100%;
+}
+
 .for-headhunters__column_text-blocks_develop-stronger-client-relationships {
   margin-top: 12px;
 }
@@ -227,7 +260,13 @@
   border: 2px solid #9288d2;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1200px) {
+  .info-for__wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 860px) {
   .info-for__wrapper {
     justify-content: center;
   }
@@ -267,20 +306,19 @@
 }
 
 @media (max-width: 540px) {
-  .for-candidates__section {
-    align-content: center;
+  .for-candidates__left {
+    align-items: center;
   }
 
   .for-candidates__text {
     flex-direction: column;
   }
 
-  .for-candidates__image {
-    width: 200px;
-    height: 200px;
+  .for-candidates__text_column {
+    max-width: 520px;
   }
 
-  .for-employers__section {
+  .for-employers__right {
     align-items: center;
   }
 
@@ -290,44 +328,33 @@
   }
 
   .for-employers__text_column {
-    height: 500px;
+    height: 600px;
   }
 
   .for-employers__text_column_second {
-    height: 300px;
+    height: 350px;
     margin-bottom: 20px;
   }
 
-  .for-employers__image {
-    width: 200px;
-    height: 200px;
+  .for-employers__column_text-blocks {
+    max-width: 520px;
   }
 
-  .for-headhunters__section {
+  .for-candidates__text-blocks_p_apply-directly-to-employer {
+    max-width: 520px;
+  }
+
+  .for-headhunters__left {
     align-items: center;
+  }
+
+  .for-headhunters__column_text-blocks {
+    width: 100%;
+    max-width: 520px;
   }
 
   .for-headhunters__text {
     height: 500px;
     flex-direction: column-reverse;
-  }
-
-  .for-headhunters__image {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media (max-width: 320px) {
-  .for-candidates__left {
-    max-width: 300px;
-  }
-
-  .for-employers__right {
-    max-width: 300px;
-  }
-
-  .for-headhunters__left {
-    max-width: 300px;
   }
 }
