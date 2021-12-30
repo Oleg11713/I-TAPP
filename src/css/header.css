@@ -112,6 +112,10 @@ a {
 }
 
 @media (max-width: 1200px) {
+  .header_wrapper{
+   padding: 0 10px;
+  }
+
   .header__nav_pages {
     padding-left: 5px;
   }
@@ -148,24 +152,45 @@ a {
 }
 
 @media (max-width: 768px) {
-  .header__nav_pages {
-    display: none;
+  .header__left {
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .header__nav_info-for {
-    display: none;
+  .header__right {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .header__nav_pages{
+    margin-top: 10px;
+  }
+
+  .header__nav_info-for{
+    margin-top: 10px;
   }
 
   .header__auth-buttons {
     margin-left: 8px;
+    margin-right: 0;
   }
 
   .auth-buttons__login {
-    padding: 10px 10px;
+    padding: 10px 8px;
   }
 
   .auth-buttons__sign-up {
     padding: 10px 6px;
+  }
+}
+
+@media (max-width: 440px){
+  .header__nav_pages{
+    display: none;
+  }
+  
+  .header__nav_info-for{
+    display: none;
   }
 }
 
@@ -175,16 +200,17 @@ a {
   }
 
   .header__auth-buttons {
-    margin-left: 8px;
+    margin-left: 6px;
+    margin-right: 0;
     width: 144px;
   }
 
   .auth-buttons__login {
-    padding: 10px 13px;
+    padding: 10px 6px;
     margin-right: 0;
   }
 
   .auth-buttons__sign-up {
-    padding: 10px 6px;
+    padding: 10px 5px;
   }
 }
