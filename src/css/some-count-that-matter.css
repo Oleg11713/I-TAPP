@@ -210,4 +210,8 @@
   .news_block_text {
     max-width: 250px;
   }
+
+  .some-count-that-matter__element {
+    margin: 20px 0;
+  }
 }
